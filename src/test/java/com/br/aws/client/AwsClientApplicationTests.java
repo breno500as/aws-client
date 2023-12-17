@@ -1,4 +1,4 @@
-package br.com.aws.client;
+package com.br.aws.client;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

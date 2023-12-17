@@ -1,4 +1,4 @@
-package br.com.aws.client.config;
+package com.br.aws.client.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

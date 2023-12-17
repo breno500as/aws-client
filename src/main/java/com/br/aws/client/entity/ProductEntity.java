@@ -1,4 +1,4 @@
-package br.com.aws.client.entity;
+package com.br.aws.client.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

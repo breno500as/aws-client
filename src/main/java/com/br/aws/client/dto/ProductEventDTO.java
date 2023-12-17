@@ -1,4 +1,4 @@
-package br.com.aws.client.dto;
+package com.br.aws.client.dto;
 
 public class ProductEventDTO {
 

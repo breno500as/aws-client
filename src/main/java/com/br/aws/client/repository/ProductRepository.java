@@ -1,10 +1,10 @@
-package br.com.aws.client.repository;
+package com.br.aws.client.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.repository.CrudRepository;
 
-import br.com.aws.client.entity.ProductEntity;
+import com.br.aws.client.entity.ProductEntity;
 
 public interface ProductRepository extends CrudRepository<ProductEntity, Long> {
 

@@ -1,6 +1,6 @@
-package br.com.aws.client.dto;
+package com.br.aws.client.dto;
 
-import br.com.aws.client.enuns.EventTypeEnum;
+import com.br.aws.client.enuns.EventTypeEnum;
 
 public class EnvelopeDTO {
 	

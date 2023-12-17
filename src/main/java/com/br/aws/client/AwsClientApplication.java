@@ -1,4 +1,4 @@
-package br.com.aws.client;
+package com.br.aws.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

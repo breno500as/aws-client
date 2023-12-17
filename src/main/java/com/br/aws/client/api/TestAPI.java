@@ -1,4 +1,4 @@
-package br.com.aws.client.api;
+package com.br.aws.client.api;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

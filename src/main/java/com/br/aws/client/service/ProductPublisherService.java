@@ -1,4 +1,4 @@
-package br.com.aws.client.service;
+package com.br.aws.client.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,14 +8,13 @@ import org.springframework.stereotype.Service;
 
 import com.amazonaws.services.sns.AmazonSNS;
 import com.amazonaws.services.sns.model.Topic;
+import com.br.aws.client.config.SnsCreate;
+import com.br.aws.client.dto.EnvelopeDTO;
+import com.br.aws.client.dto.ProductEventDTO;
+import com.br.aws.client.entity.ProductEntity;
+import com.br.aws.client.enuns.EventTypeEnum;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import br.com.aws.client.config.SnsCreate;
-import br.com.aws.client.dto.EnvelopeDTO;
-import br.com.aws.client.dto.ProductEventDTO;
-import br.com.aws.client.entity.ProductEntity;
-import br.com.aws.client.enuns.EventTypeEnum;
 
 @Service
 public class ProductPublisherService {

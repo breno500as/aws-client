@@ -1,4 +1,4 @@
-package br.com.aws.client.api;
+package com.br.aws.client.api;
 
 import java.util.Optional;
 
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.aws.client.entity.ProductEntity;
-import br.com.aws.client.enuns.EventTypeEnum;
-import br.com.aws.client.repository.ProductRepository;
-import br.com.aws.client.service.ProductPublisherService;
+import com.br.aws.client.entity.ProductEntity;
+import com.br.aws.client.enuns.EventTypeEnum;
+import com.br.aws.client.repository.ProductRepository;
+import com.br.aws.client.service.ProductPublisherService;
 
 @RestController
 @RequestMapping("/api/products")

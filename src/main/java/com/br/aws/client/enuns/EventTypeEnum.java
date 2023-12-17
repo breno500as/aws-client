@@ -1,4 +1,4 @@
-package br.com.aws.client.enuns;
+package com.br.aws.client.enuns;
 
 public enum EventTypeEnum {
     PRODUCT_CREATED,

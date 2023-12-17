@@ -1,4 +1,4 @@
-package br.com.aws.client.config;
+package com.br.aws.client.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
