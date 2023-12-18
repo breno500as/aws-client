@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.amazonaws.services.sns.AmazonSNS;
+import com.amazonaws.services.sns.model.PublishResult;
 import com.amazonaws.services.sns.model.Topic;
 import com.br.aws.client.config.AwsLocalStackSns;
 import com.br.aws.client.dto.EnvelopeDTO;
@@ -43,7 +44,10 @@ public class ProductPublisherService {
 		try {
 			envelope.setData(objectMapper.writeValueAsString(productEvent));
 
-			this.snsClient.publish(this.productTopic.getTopicArn(), objectMapper.writeValueAsString(envelope));
+			final PublishResult publishResult = this.snsClient.publish(this.productTopic.getTopicArn(), objectMapper.writeValueAsString(envelope));
+			
+			LOG.info("Product event sent - Event: {} - ProductId: {} - MessageId: {}", envelope.getEventType(),
+					productEvent.getProductId(), publishResult.getMessageId());
 
 		} catch (JsonProcessingException e) {
 			LOG.error("Failed to create product event message");
