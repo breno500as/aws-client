@@ -16,13 +16,13 @@ import com.amazonaws.services.sns.model.Topic;
 
 @Configuration
 @Profile("localhost")
-public class SnsCreate {
+public class AwsLocalStackSns {
 
-	private static final Logger LOG = LoggerFactory.getLogger(SnsCreate.class);
+	private static final Logger LOG = LoggerFactory.getLogger(AwsLocalStackSns.class);
 	private final String productTopic;
 	private final AmazonSNS snsClient;
 
-	public SnsCreate() {
+	public AwsLocalStackSns() {
 		this.snsClient = AmazonSNSClient.builder().withEndpointConfiguration(
 				new AwsClientBuilder.EndpointConfiguration("http://localhost:4566", Regions.US_EAST_1.getName()))
 				.withCredentials(new DefaultAWSCredentialsProviderChain()).build();

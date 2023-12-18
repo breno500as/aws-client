@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.amazonaws.services.sns.AmazonSNS;
 import com.amazonaws.services.sns.model.Topic;
-import com.br.aws.client.config.SnsCreate;
+import com.br.aws.client.config.AwsLocalStackSns;
 import com.br.aws.client.dto.EnvelopeDTO;
 import com.br.aws.client.dto.ProductEventDTO;
 import com.br.aws.client.entity.ProductEntity;
@@ -19,7 +19,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Service
 public class ProductPublisherService {
 	
-	private static final Logger LOG = LoggerFactory.getLogger(SnsCreate.class);
+	private static final Logger LOG = LoggerFactory.getLogger(AwsLocalStackSns.class);
 
 	@Autowired
 	private AmazonSNS snsClient;

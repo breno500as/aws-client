@@ -39,6 +39,7 @@ dependencies {
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.12.529')
+    implementation 'com.amazonaws:aws-java-sdk-sqs'
     implementation 'com.amazonaws:aws-java-sdk-s3'
     implementation 'com.amazonaws:aws-java-sdk-sns'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
