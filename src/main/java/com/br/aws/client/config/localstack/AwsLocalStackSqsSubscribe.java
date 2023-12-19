@@ -1,4 +1,4 @@
-package com.br.aws.client.config;
+package com.br.aws.client.config.localstack;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;

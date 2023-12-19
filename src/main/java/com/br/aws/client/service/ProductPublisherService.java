@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.amazonaws.services.sns.AmazonSNS;
 import com.amazonaws.services.sns.model.PublishResult;
 import com.amazonaws.services.sns.model.Topic;
-import com.br.aws.client.config.AwsLocalStackSns;
+import com.br.aws.client.config.localstack.AwsLocalStackSns;
 import com.br.aws.client.dto.EnvelopeDTO;
 import com.br.aws.client.dto.ProductEventDTO;
 import com.br.aws.client.entity.ProductEntity;
